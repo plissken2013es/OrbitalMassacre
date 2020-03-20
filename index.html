@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Orbital Massacre (a DHTML arcade game)</title>
+            <style type="text/css">
+                a {
+                    text-decoration: none;
+                    color: darkseagreen;
+                }
+                #screen {
+                    position: relative;
+                    background-color:#000;
+                    overflow: hidden;
+                    width:480px;
+                    height:384px;
+                }
+                #draw-target {
+                    width:480px;
+                    height:384px;
+                    background-color:#000;
+                    position:relative;
+                    color:#FFF;
+                    font-size:16px;
+                    font-family:"Courier New", Courier, monospace;
+                    font-weight:bold;
+                    letter-spacing:1px;
+                }
+                #draw-messages {
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    position: absolute;
+                    color: #FFF;
+                    font-size: 16px;
+                    font-family: "Courier New", Courier, monospace;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    top: 250px;
+                    width: 480px;
+                    height: 50px;
+                    line-height: 35px;
+                    overflow: hidden;
+                }
+                .message {
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-top:32px;
+                    text-align:center;
+                }
+                #score {
+                    position:absolute;
+                    top:8px;
+                    left:16px;
+                }
+                #highScore {
+                    position:absolute;
+                    top:8px;
+                    right:16px;
+                }
+                #lives {
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-top:8px;
+                    text-align:center;
+                }
+                .blink_me {
+                    animation: blinker 1s linear infinite;
+                }
+
+                @keyframes blinker {  
+                    50% { opacity: 0.0; }
+                }
+            </style>
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        </head>
+    <body>
+        <div id="screen">
+            <div id="draw-target"></div>
+        </div>
+        <div id="draw-messages"></div>
+        
+        <!--<script src="js/rAF.js"></script>
+        <script src="js/BufferLoader.js"></script>
+        <script src="js/Globals.js"></script>
+        <script src="js/DHTMLSprite.js"></script>
+        <script src="js/ScreenMessage.js"></script>
+        <script src="js/CollisionManager.js"></script>
+        <script src="js/Aliens.js"></script>
+        <script src="js/Tank.js"></script>
+        <script src="js/Shield.js"></script>
+        <script src="js/Saucer.js"></script>
+        <script src="js/Main.js"></script>-->
+        
+        <script src="main_compressed.js"></script>
+    </body>
+</html>
